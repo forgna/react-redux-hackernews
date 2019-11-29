@@ -1,8 +1,14 @@
 import React from 'react';
+import './App.css';
 
-const App = () => (
-  <div>
-    <h1>Hackernews using React with Redux.</h1>
+import Stories from './Stories';
+
+const App = ({ stories, onArchive }) => (
+  <div className="app">
+    <Stories 
+      stories={stories} 
+      onArchive={onArchive}
+    />
   </div>
 );
 
